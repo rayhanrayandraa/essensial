@@ -10,7 +10,7 @@ test.describe('Login & Dashboard E2E Tests', () => {
   test('TC01: Login Success and reach Dashboard', async ({ page }) => {
     // 1. Temukan input email dan isi dengan kredensial yang diberikan
     const emailInput = page.locator('input[name="username"]');
-    await emailInput.first().fill('reyand.oneil@assist.id');
+    await emailInput.first().fill('reyand2.oneil@assist.id');
 
     // 2. Temukan input password dan isi
     const passwordInput = page.locator('input[name="password"]');
@@ -21,7 +21,7 @@ test.describe('Login & Dashboard E2E Tests', () => {
     await loginButton.first().click();
 
     // 4. Tunggu beberapa saat agar proses navigasi ke dashboard selesai
-    await page.waitForTimeout(10000); 
+    await page.waitForTimeout(10000);
 
     // 5. Ambil screenshot halaman Dashboard
     await page.screenshot({ path: 'dashboard-success.png', fullPage: true });
