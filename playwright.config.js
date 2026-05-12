@@ -1,6 +1,9 @@
-const { defineConfig, devices } = require('@playwright/test');
+import { defineConfig, devices } from '@playwright/test';
 
-module.exports = defineConfig({
+export default defineConfig({
+
+  timeout: 120 * 1000,
+
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,

@@ -4,7 +4,7 @@ export const test = base.extend({
     loggedInPage: async ({ page }, use) => {
         await page.goto('https://dev-essensial.assist.id/login');
 
-        await page.locator('#username').fill('rayhanrayandra.work.id@gmail.com');
+        await page.locator('#username').fill('fowobag861@inreur.com');
         await page.locator('[data-test="input-password"]').fill('12345678');
         await page.locator('[data-test="login-btn"]').click();
 
